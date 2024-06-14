@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.auth-container>h1 {
+  font-size: 2em;
+  margin: 24px;
+}
+
+.auth-container>p {
+  margin: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth-container>form {
+  border: 1px solid #3339;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #aaa9;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container>form>input {
+  margin: 16px 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.auth-container>form>button {
+  margin: 16px 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* everything above this line is auth CSS */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  top: 0;
+}
+
+.navbar button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #f0f0f0;
+}
+
+.allCallsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.callDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 15px 5px;
+  border: 1px solid #1e90ff;
+  border-radius: 8px;
+  padding: 16px;
+  background: linear-gradient(to bottom right, #add8e6, #87cefa);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.callDiv:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.callDiv>p {
+  margin: 8px 0;
+  font-weight: bold;
+  color: #1265b8;
+}
+
+.calllogContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
